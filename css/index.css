@@ -7,4 +7,13 @@
 
 .mailbox-content {
 	display: inline-block;
+	background-color: rgba(173,216,230, 0.5);
+	padding: 30px;
+}
+
+.email-list {
+	min-height: 30px;
+	min-width: 30px;
+	background-color: rgb(173,216,230);
+	padding: 15px;
 }

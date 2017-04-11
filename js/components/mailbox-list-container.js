@@ -7,6 +7,7 @@ import EMAILS from '../emails'
 // import SidebarContainer from './sidebar-container';
 
 export default function MailboxListContainer(props){
+	console.log("props in MailList Contents ");
 	console.log('MailboxListProps');
 	console.log(props);
 	

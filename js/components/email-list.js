@@ -3,8 +3,7 @@ import React from 'react';
 export default function EmailList(props){
 
 	console.log('props for emailList')
-	console.log(props);
-	console.log(props.emails);
+	// console.log(props);
 
 	var emailsArr = [];
 
@@ -16,6 +15,7 @@ export default function EmailList(props){
 	return(
 		<div className='email-list'>
 			{emailsArr.map(function(item, index){
+				console.log(emailsArr);
 				return (
 					<div key={index}>
 						<span className='sender'>{item.from}</span>
