@@ -6,11 +6,11 @@ export default function EmailContent(props) {
     return (
         <div className="email-content">
         	<ul>
-        		<li>From: {props.from}</li>
-        		<li>To: {props.to}</li>
-        		<li>Subject: {props.title}</li>
+        		<li>From: {props.email.from}</li>
+        		<li>To: {props.email.to}</li>
+        		<li>Subject: {props.email.title}</li>
         	</ul>
-        	<p>{props.content}</p>
+        	<p>{props.email.content}</p>
         </div>
     );
 };

@@ -11,7 +11,8 @@ const routes = (
     <Router history={hashHistory}>
         <Route path="/" component={App}>
             <IndexRoute component={EmailAccountContainer} />
-            <Route path="/:mailbox/:id" component={MailboxContentContainer} />
+            <Route path="/:mailbox" component={EmailAccountContainer} />
+            <Route path="/:mailbox/:id" component={EmailAccountContainer} />
             <Route path="*" component={Page404} />
         </Route>
     </Router>
@@ -21,3 +22,4 @@ document.addEventListener('DOMContentLoaded', () =>
     ReactDOM.render(routes, document.getElementById('app'))
 );
 
+//index.html renders the indexroute

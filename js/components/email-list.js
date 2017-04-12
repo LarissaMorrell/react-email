@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router';
 
 export default function EmailList(props){
 
@@ -13,8 +14,10 @@ export default function EmailList(props){
 				{emailsArr.map(function(item, index){
 					return (
 						<li key={index}>
-							<span className='sender'>{item.from}</span>
-							<span className='subject'>{item.title}</span>
+							<Link to={'/' + props.mailbox + '/' + item.id}>
+								<span className='sender'>{item.from}</span>
+								<span className='subject'>{item.title}</span>
+							</Link>
 						</li>
 					);
 				})}
