@@ -9,14 +9,16 @@ export default function EmailList(props){
 
 	return(
 		<div className='email-list'>
-			{emailsArr.map(function(item, index){
-				return (
-					<div key={index}>
-						<span className='sender'>{item.from}</span>
-						<span className='subject'>{item.title}</span>
-					</div>
-				);
-			})}
+			<ul>
+				{emailsArr.map(function(item, index){
+					return (
+						<li key={index}>
+							<span className='sender'>{item.from}</span>
+							<span className='subject'>{item.title}</span>
+						</li>
+					);
+				})}
+			</ul>
 		</div>
 	);
 }

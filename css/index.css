@@ -17,3 +17,13 @@
 	background-color: rgb(173,216,230);
 	padding: 15px;
 }
+
+.account-container {
+	background: blue;
+	padding: 50px;
+}
+
+span {
+	margin-left: 15px;
+	margin-right: 15px;
+}

@@ -16,7 +16,7 @@ export default function EmailAccountContainer(props){
 	}
 
 	return(
-		<div>
+		<div className='account-container'>
 			<MailboxListContainer mailboxes={Object.keys(EMAILS)}/> 
 			<MailboxContentContainer emails={emailsArr}/>
 		</div>

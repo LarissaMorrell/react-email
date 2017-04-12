@@ -7,16 +7,22 @@ import EMAILS from '../emails'
 // import SidebarContainer from './sidebar-container';
 
 export default function MailboxListContainer(props){
-	console.log("props in MailList Contents ");
-	console.log('MailboxListProps');
-	console.log(props);
+	// console.log("props in MailList Contents ");
+	// console.log(props.params != undefined);
+	// console.log(props.params);
 	
-	return(
-		<div className='mailbox-list'>
-			<ul>{props.mailboxes.map(function(item, index){
-				return (<li key={index}>{item}</li>);
-			})}</ul> 
-		</div>
-	);
+	if(props.params != undefined){
+		console.log("props in MailList Contents ");
+		return(
+			<div className='mailbox-list'>
+				<ul>{props.mailboxes.map(function(item, index){
+					return (<li key={index}>{item}</li>);
+				})}</ul> 
+			</div>
+		);
+	} else {
+		console.log('no emails');
+		return (<div className='mailbox-list'>No mailboxes</div>);
+	}
 	//mailboxes for attr in parent
 }
